@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "bold";
+    font-style: normal;
+    src: url("Gilroy-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "regular";
+    font-style: normal;
+    src: url("Gilroy-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "semi-bold";
+    font-style: normal;
+    src: url("Gilroy-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: "extra-bold";
+    font-style: normal;
+    src: url("Gilroy-ExtraBold.ttf");
+  }
+
+  @font-face {
+    font-family: "medium";
+    font-style: normal;
+    src: url("Gilroy-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "regularitalic";
+    font-style: normal;
+    src: url("Gilroy-RegularItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "light";
+    font-style: normal;
+    src: url("Gilroy-Light.ttf");
+  }

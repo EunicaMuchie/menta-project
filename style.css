@@ -1,0 +1,1329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.banner {
+  text-align: center;
+  margin: 20px 20px;
+}
+.banner .banner-text {
+  margin: 30px 0;
+}
+.banner .banner-text h1 {
+  font-family: "regular";
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.banner .banner-text p {
+  font-family: "semi-bold";
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  color: #27226B;
+}
+.banner .banner-text .button {
+  margin-bottom: 10px;
+}
+.banner .banner-text .button button {
+  background-color: #0493A3;
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border-radius: 5px;
+  border: 1px solid #0493A3;
+  outline: none;
+}
+.banner .banner-text .button button:hover {
+  background-color: #27226B;
+  border: 1px solid #27226B;
+}
+
+.about {
+  text-align: center;
+  margin: 0 20px;
+}
+.about .path2 {
+  display: none;
+}
+.about .gallery .img {
+  z-index: 1;
+  position: relative;
+  width: 230px;
+  top: 15px;
+}
+.about .gallery .elps {
+  position: absolute;
+  top: 30px;
+  width: 255px;
+  left: 55px;
+}
+.about .about-text {
+  margin: 30px 0;
+}
+.about .about-text h2 {
+  font-family: "extra-bold";
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #0493A3;
+}
+.about .about-text p {
+  font-family: "medium";
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  color: #27226B;
+}
+.about .about-text .button {
+  margin-bottom: 10px;
+}
+.about .about-text .button button {
+  background-color: #27226B;
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border-radius: 5px;
+  border: 1px solid #27226B;
+  outline: none;
+}
+.about .about-text .button button:hover {
+  border: 1px solid #0493A3;
+  background-color: #0493A3;
+}
+
+.education {
+  padding: 0 20px;
+  margin-bottom: 480px;
+}
+.education h2 {
+  font-family: "extra-bold";
+  font-size: 26px;
+  line-height: 1.3;
+  color: #0493A3;
+  margin: 40px 0;
+  text-align: center;
+}
+.education .tab-header {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-bottom: 2px solid #27226B;
+  padding-bottom: 8px;
+}
+.education .tab-header > .active h3 {
+  color: #0493A3;
+}
+.education .tab-header h3 {
+  font-family: "extra-bold";
+  font-size: 20px;
+  margin-right: 10px;
+  color: #b1b1b1;
+}
+.education .tab-header .icon {
+  display: none;
+}
+.education .tab-body {
+  position: relative;
+  margin-bottom: 430px;
+  margin-top: 20px;
+}
+.education .tab-body > div {
+  position: absolute;
+  top: 200%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+}
+.education .tab-body .active {
+  top: 0px;
+  opacity: 1;
+  transform: scale(1);
+  color: #27226B;
+  text-align: center;
+  font-family: "bold";
+  padding: 25px;
+}
+.education .tab-body .active p {
+  font-family: "medium";
+  font-size: 19px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  color: #27226B;
+}
+.education .tab-body .active button {
+  background-color: #27226B;
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid #27226B;
+  outline: none;
+  border-radius: 0px;
+}
+.education .tab-body .active button:hover {
+  background-color: #0493A3;
+  border: #0493A3;
+}
+.education .ellipse {
+  display: none;
+}
+.education .thots {
+  display: none;
+}
+
+.warm {
+  text-align: center;
+  margin: 0 20px;
+}
+.warm .row .one {
+  order: 2;
+}
+.warm .row .one .warm-text {
+  margin: -150px 0;
+}
+.warm .row .one .warm-text h2 {
+  font-family: "extra-bold";
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #0493A3;
+}
+.warm .row .one .warm-text p {
+  font-family: "medium";
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  color: #27226B;
+}
+.warm .row .one .warm-text .button {
+  margin-bottom: 10px;
+}
+.warm .row .one .warm-text .button button {
+  background-color: #27226B;
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid #27226B;
+  outline: none;
+}
+.warm .row .one .warm-text .button button:hover {
+  background-color: #0493A3;
+  border: 1px solid #0493A3;
+}
+.warm .row .two {
+  order: 1;
+}
+.warm .row .two .warm-img {
+  order: 1;
+}
+.warm .row .two .warm-img .ellip {
+  width: 280px;
+}
+.warm .row .two .warm-img .img {
+  position: relative;
+  top: -200px;
+  width: 250px;
+}
+
+.support {
+  margin: 180px 20px 20px 20px;
+  background-color: #27226B;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.support .ellipse {
+  display: none;
+}
+.support .support-text {
+  margin-top: 20px;
+}
+.support .support-text h2 {
+  font-family: "bold";
+  font-size: 21px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.support .support-text h3 {
+  font-family: "medium";
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.support .support-text p {
+  font-family: "light";
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+.support .support-text .button {
+  margin-bottom: 10px;
+}
+.support .support-text .button button {
+  background-color: #27226B;
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid white;
+  outline: none;
+}
+.support .support-text .button button:hover {
+  background-color: white;
+  color: #27226B;
+}
+
+.gallery {
+  margin: 30px 20px;
+}
+.gallery .lincon, .gallery .gallery-items3 {
+  display: none;
+}
+.gallery .kids {
+  margin-bottom: 10px;
+}
+.gallery img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .gallery-items2 {
+  position: relative;
+}
+.gallery .gallery-items2 .gallery-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.384);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 20px 10px 20px;
+}
+.gallery .gallery-items2 .gallery-text h2 {
+  font-family: "extra-bold";
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.gallery .gallery-items2 .gallery-text p {
+  font-family: "medium";
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.gallery .gallery-items2 .gallery-text .button button {
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid #0493A3;
+  background-color: #0493A3;
+  outline: none;
+}
+.gallery .gallery-items2 .gallery-text .button button:hover {
+  background-color: #27226B;
+  border: #27226B;
+}
+
+.team {
+  margin: 30px 20px;
+  background-image: url(img/team.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 30px 10px;
+}
+.team h2 {
+  font-family: "regular";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.team p {
+  font-family: "regular";
+  font-size: 19px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.team .button {
+  margin-bottom: 10px;
+}
+.team .button .one {
+  background-color: rgba(0, 0, 255, 0);
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid white;
+  outline: none;
+}
+.team .button .one:hover {
+  background-color: white;
+  color: #0493A3;
+}
+.team .team-inner {
+  margin-top: 30px;
+}
+.team .team-inner .button {
+  margin-bottom: 10px;
+}
+.team .team-inner .button .two {
+  background-color: rgba(0, 0, 255, 0);
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid white;
+  outline: none;
+}
+.team .team-inner .button .two:hover {
+  background-color: white;
+  color: #27226B;
+}
+.team .smile {
+  display: none;
+}
+
+.volunteer {
+  text-align: center;
+  margin: 30px 20px;
+  color: white;
+}
+.volunteer img {
+  width: 100%;
+}
+.volunteer .volunteer-text {
+  background-color: #27226B;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 20px 0;
+  outline: 1px solid white;
+  outline-offset: -10px;
+}
+.volunteer .volunteer-text h2 {
+  font-family: "regular";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.volunteer .volunteer-text p {
+  font-family: "regular";
+  font-size: 19px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.volunteer .volunteer-text .button {
+  margin-bottom: 10px;
+}
+.volunteer .volunteer-text .button .one {
+  background-color: rgba(0, 0, 255, 0);
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid white;
+  outline: none;
+}
+.volunteer .volunteer-text .button .one:hover {
+  background-color: white;
+  color: #27226B;
+}
+.volunteer .second {
+  background-color: #0493A3;
+}
+.volunteer .second .button {
+  margin-bottom: 10px;
+}
+.volunteer .second .button .two {
+  background-color: rgba(0, 0, 255, 0);
+  color: white;
+  padding: 10px;
+  font-family: "regular";
+  border: 1px solid white;
+  outline: none;
+}
+.volunteer .second .button .two:hover {
+  background-color: white;
+  color: #0493A3;
+}
+
+.footer {
+  text-align: center;
+  background-image: url(img/footer.png);
+  background-size: cover;
+  margin-top: 50px;
+  padding: 60px 20px 30px 20px;
+  color: #27226B;
+}
+.footer .first, .footer .second, .footer .third {
+  display: none;
+}
+.footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-inner h2 {
+  font-size: 25px;
+  font-family: "extra-bold";
+  line-height: 1.3;
+  color: #0493A3;
+  margin-bottom: 20px;
+}
+.footer .footer-inner form {
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer .footer-inner form input {
+  border: 1px solid white;
+  padding: 5px;
+}
+.footer .footer-inner form ::-moz-placeholder {
+  font-family: "regularitalic";
+  color: #7B7B7B;
+}
+.footer .footer-inner form :-ms-input-placeholder {
+  font-family: "regularitalic";
+  color: #7B7B7B;
+}
+.footer .footer-inner form ::placeholder {
+  font-family: "regularitalic";
+  color: #7B7B7B;
+}
+.footer .footer-inner form button {
+  background-color: #27226B;
+  color: white;
+  padding: 5px;
+  font-family: "regular";
+  border: 1px solid white;
+  outline: none;
+}
+.footer .footer-inner form button:hover {
+  background-color: #0493A3;
+}
+.footer .footer-inner .footer-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-inner .footer-text h3 {
+  font-size: 22px;
+  font-family: "extra-bold";
+  margin-bottom: 10px;
+}
+.footer .footer-inner .footer-text p {
+  font-size: 19px;
+  font-family: "regular";
+  line-height: 1.5;
+}
+.footer .footer-inner .footer-text a {
+  color: #27226B;
+  font-size: 19px;
+  margin-bottom: 5px;
+  font-family: "regular";
+}
+.footer .footer-inner .footer-text a:hover {
+  color: #0493A3;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .banner {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+  }
+  .banner .banner-text {
+    margin: 30px 0;
+  }
+  .banner .banner-text h1 {
+    font-size: 32px;
+  }
+  .banner .banner-text p {
+    font-size: 20px;
+  }
+  .banner .banner-text .button {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .banner .banner-text .button button {
+    font-size: 20px;
+  }
+  .banner img {
+    width: 59%;
+  }
+
+  .about {
+    text-align: left;
+    position: relative;
+    padding: 120px 25px 0 25px;
+    margin: 0 0;
+  }
+  .about .img {
+    left: 31px;
+  }
+  .about .path2 {
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 0;
+  }
+  .about .about-text {
+    margin: 20px 0;
+  }
+
+  .education {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-image: url(img/education.png);
+    background-size: cover;
+    height: 43vh;
+    padding-top: 30px;
+    padding-bottom: 66px;
+    margin-top: 50px;
+  }
+  .education h2 {
+    width: 100%;
+    margin-bottom: -100px;
+  }
+  .education .tab-header {
+    flex-direction: column;
+    text-align: left;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px !important;
+  }
+  .education .tab-header h3 {
+    font-size: 20px;
+  }
+  .education .tab-body {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 75%;
+  }
+  .education .tab-body > div {
+    position: absolute;
+    top: 200%;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+  }
+  .education .tab-body .active {
+    top: 0px;
+    opacity: 1;
+    transform: scale(1);
+    color: #27226B;
+    text-align: left;
+    padding: 25px;
+  }
+  .education .tab-body .active p {
+    font-family: "medium";
+    font-size: 19px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    color: #27226B;
+  }
+  .education .tab-body .active button {
+    background-color: #27226B;
+    color: white;
+    padding: 10px;
+    font-family: "regular";
+    border: 1px solid #27226B;
+    outline: none;
+  }
+
+  .warm {
+    text-align: left;
+    position: relative;
+    padding: 120px 25px 0 25px;
+    margin: 0 0;
+  }
+  .warm .row .one {
+    order: 1 !important;
+    margin-top: -140px;
+  }
+  .warm .row .one .warm-text {
+    margin: 0px 0;
+  }
+  .warm .row .two {
+    order: 2 !important;
+  }
+  .warm .row .two .warm-img {
+    margin: -120px 0px 0px 50px;
+  }
+
+  .support {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -50px;
+  }
+  .support .support-img {
+    width: 49%;
+    display: flex;
+    align-items: center;
+  }
+  .support .support-text {
+    margin-top: 5px;
+    width: 49%;
+  }
+
+  .gallery {
+    margin: 30px 20px;
+  }
+  .gallery .gallery-items1, .gallery .gallery-items3 {
+    display: none;
+  }
+  .gallery .gallery-items2 {
+    position: relative;
+  }
+  .gallery .gallery-items2 .gallery-text {
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .gallery-items2 .gallery-text h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .gallery .gallery-items2 .gallery-text p {
+    font-size: 24px;
+    width: 90%;
+    padding-bottom: 30px;
+  }
+  .gallery .gallery-items2 .gallery-text .button button {
+    padding: 20px;
+    font-size: 27px;
+  }
+
+  .team {
+    text-align: left;
+    display: flex;
+    background-color: #0493A3;
+    justify-content: space-between;
+  }
+  .team .button button {
+    font-size: 20px;
+  }
+  .team .team-inner {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .volunteer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .volunteer img {
+    width: auto;
+    width: 48%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .volunteer .volunteer-text h2 {
+    font-size: 25px;
+  }
+  .volunteer .volunteer-text p {
+    font-size: 24px;
+  }
+  .volunteer .volunteer-text .button button {
+    font-size: 24px;
+  }
+  .volunteer .second {
+    width: 48%;
+  }
+
+  .footer .footer-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-evenly;
+  }
+  .footer .footer-inner h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer-inner form {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer-inner form input {
+    padding: 10px;
+    width: 50%;
+    margin-right: 10px;
+  }
+  .footer .footer-inner form ::-moz-placeholder {
+    font-size: 19px;
+  }
+  .footer .footer-inner form :-ms-input-placeholder {
+    font-size: 19px;
+  }
+  .footer .footer-inner form ::placeholder {
+    font-size: 19px;
+  }
+  .footer .footer-inner form button {
+    width: 15%;
+    padding: 10px;
+  }
+  .footer .footer-inner .footer-text {
+    width: 30%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    margin: 20px 28px;
+  }
+  .banner .banner-text {
+    margin: 30px 0;
+  }
+  .banner .banner-text h1 {
+    font-size: 73px;
+    color: white;
+  }
+  .banner .banner-text p {
+    font-size: 23px;
+    width: 99%;
+    margin-top: 60px;
+  }
+  .banner .banner-text .button {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .banner .banner-text .button button {
+    font-size: 23px;
+  }
+  .banner img {
+    width: 49%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .about {
+    padding: 180px 34px 0 57px;
+  }
+  .about .path2 {
+    width: 100%;
+    top: -60px;
+  }
+  .about .img {
+    left: 32px;
+    top: -125px !important;
+    height: 280px !important;
+    width: 350px !important;
+  }
+  .about .elps {
+    left: 25px !important;
+    top: 12px !important;
+    width: 400px !important;
+  }
+  .about .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: -80px;
+  }
+  .about .about-text h2 {
+    font-size: 40px;
+  }
+  .about .about-text p {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  .about .about-text .button {
+    margin-top: 10px;
+  }
+  .about .about-text .button button {
+    font-size: 23px;
+    width: 35%;
+  }
+
+  .education {
+    margin-bottom: 30px;
+    padding: 200px 70px 0px 70px;
+    justify-content: space-between;
+    height: 40vh;
+    padding-top: 30px;
+    padding-bottom: 66px;
+    margin-top: -50px;
+  }
+  .education h2 {
+    font-size: 45px;
+  }
+  .education .tab-header {
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 0px;
+    width: 20%;
+    height: 190px;
+    position: relative;
+  }
+  .education .tab-header .active {
+    color: #0493A3;
+  }
+  .education .tab-header h3 {
+    font-family: "extra-bold";
+    font-size: 23px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .education .tab-header:after {
+    content: "";
+    background-color: #27226B;
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    right: -73px;
+  }
+  .education .tab-body {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    width: 70%;
+  }
+  .education .tab-body > div {
+    position: absolute;
+    top: 200%;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+  }
+  .education .tab-body .active {
+    top: 0px;
+    opacity: 1;
+    transform: scale(1);
+    color: #27226B;
+    text-align: left;
+    padding: 0px 25px;
+  }
+  .education .tab-body .active p {
+    font-family: "medium";
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    color: #27226B;
+  }
+  .education .tab-body .active button {
+    font-size: 28px;
+  }
+  .education .ellipse {
+    display: none;
+    position: absolute;
+    width: 200px;
+    z-index: 99 !important;
+    top: 1800px !important;
+    right: -30px !important;
+  }
+  .education .thots {
+    display: none;
+    position: absolute;
+    z-index: 99 !important;
+    top: 1800px;
+    right: 22px;
+    width: 100px;
+  }
+
+  .warm {
+    padding: 180px 34px 0 57px;
+  }
+  .warm .one .warm-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 50px !important;
+    margin-top: -120px !important;
+  }
+  .warm .one .warm-text h2 {
+    font-size: 40px;
+  }
+  .warm .one .warm-text p {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  .warm .one .warm-text .button {
+    margin-top: 10px;
+  }
+  .warm .one .warm-text .button button {
+    font-size: 23px;
+    width: 80%;
+    padding: 15px;
+  }
+  .warm .two .warm-img {
+    margin-left: 30px !important;
+  }
+  .warm .two .warm-img .img {
+    width: 350px !important;
+    left: -10px !important;
+    top: -290px !important;
+  }
+  .warm .two .warm-img .ellip {
+    left: 13px !important;
+    top: 50px !important;
+    width: 400px !important;
+  }
+
+  .support {
+    justify-content: space-around;
+    padding: 30px 20px;
+    position: relative;
+    margin-top: 0px;
+  }
+  .support .ellipse {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+  }
+  .support .support-text {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .support .support-text h2 {
+    font-size: 31px;
+  }
+  .support .support-text h3 {
+    font-size: 23px;
+    margin-bottom: 3px;
+  }
+  .support .support-text p {
+    font-size: 21px;
+  }
+  .support .support-text .button button {
+    font-size: 23px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .gallery {
+    margin: 160px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery .gallery-items1, .gallery .gallery-items3, .gallery .lincon {
+    display: block;
+  }
+  .gallery img {
+    width: auto;
+  }
+  .gallery .gallery-items1 {
+    padding-top: 15px;
+  }
+  .gallery .gallery-items3 {
+    padding-top: 45px;
+    display: none;
+  }
+  .gallery .gallery-items2 {
+    position: relative;
+  }
+  .gallery .gallery-items2 .gallery-text {
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom: 30px;
+  }
+  .gallery .gallery-items2 .gallery-text h2 {
+    font-size: 45px;
+  }
+  .gallery .gallery-items2 .gallery-text p {
+    font-size: 24px;
+    width: 87%;
+    padding-bottom: 20px;
+  }
+  .gallery .gallery-items2 .gallery-text .button button {
+    padding: 10px;
+    font-size: 31px;
+  }
+
+  .team {
+    padding: 30px 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .team h2 {
+    font-size: 34px;
+  }
+  .team p {
+    font-size: 22px;
+  }
+  .team .button button {
+    font-size: 23px;
+    padding: 15px;
+  }
+  .team .team-text p {
+    width: 60%;
+  }
+  .team .smile {
+    display: block;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+  }
+
+  .volunteer {
+    margin: 20px 0px;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+  .volunteer img {
+    width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .volunteer .volunteer-text {
+    width: 32%;
+    margin-left: 0px;
+  }
+  .volunteer .volunteer-text h2 {
+    font-size: 34px;
+  }
+  .volunteer .volunteer-text p {
+    font-size: 22px;
+  }
+  .volunteer .volunteer-text .button button {
+    font-size: 23px;
+    padding: 15px;
+  }
+  .volunteer .second {
+    width: 32%;
+    margin-left: 0px;
+  }
+
+  .footer {
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .footer .first, .footer .second, .footer .third {
+    display: block;
+    position: absolute;
+  }
+  .footer .first {
+    top: 40px;
+  }
+  .footer .second {
+    bottom: 0;
+    left: 70px;
+  }
+  .footer .third {
+    right: 20px;
+  }
+  .footer .footer-inner {
+    padding: 20px 100px 20px 200px;
+  }
+  .footer .footer-inner h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .footer .footer-inner form {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+  }
+  .footer .footer-inner form input {
+    padding: 20px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  .footer .footer-inner form ::-moz-placeholder {
+    font-size: 19px;
+  }
+  .footer .footer-inner form :-ms-input-placeholder {
+    font-size: 19px;
+  }
+  .footer .footer-inner form ::placeholder {
+    font-size: 19px;
+  }
+  .footer .footer-inner form button {
+    width: 20%;
+    padding: 17px;
+    font-size: 26px;
+  }
+  .footer .footer-inner .footer-text {
+    margin-top: 25px;
+  }
+  .footer .footer-inner .footer-text h3 {
+    font-size: 24px;
+  }
+  .footer .footer-inner .footer-text p {
+    font-size: 24px;
+  }
+  .footer .footer-inner .footer-text a {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner {
+    margin: 20px 30px;
+  }
+  .banner img {
+    width: auto;
+  }
+
+  .about {
+    padding: 238px 50px 0 70px;
+  }
+  .about .about-text h2 {
+    font-size: 45px;
+  }
+  .about .about-text p {
+    width: 95%;
+  }
+
+  .education {
+    height: 100vh;
+    padding-top: 120px;
+  }
+  .education .tab-header h3 {
+    font-size: 20px;
+  }
+  .education .tab-header .icon {
+    display: block;
+  }
+
+  .warm {
+    padding: 89px 70px 0 70px;
+    margin-top: 100px;
+  }
+  .warm .row {
+    margin-Left: 80px !important;
+  }
+  .warm .row .warm-text {
+    padding-left: 10px;
+  }
+  .warm .row .warm-text h2 {
+    font-size: 45px !important;
+  }
+  .warm .row .warm-text p {
+    width: 90% !important;
+  }
+  .warm .row .warm-img .img {
+    width: 100%;
+  }
+
+  .support {
+    padding: 30px 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .support .ellipse {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -85px;
+  }
+  .support .support-img {
+    width: 42%;
+  }
+  .support .support-text {
+    width: 50%;
+  }
+  .support .support-text h2 {
+    width: 60%;
+  }
+  .support .support-text p {
+    font-size: 23px;
+    width: 95%;
+  }
+  .support .support-text .button a {
+    font-size: 29px;
+  }
+
+  .gallery .gallery-items3 {
+    display: block;
+  }
+
+  .team {
+    background-color: white;
+  }
+
+  .volunteer .volunteer-text .button button {
+    width: 90%;
+  }
+
+  .footer .footer-inner form button {
+    width: 15%;
+  }
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,150 @@
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  align-items: center;
+}
+.header .path1 {
+  display: none;
+}
+.header .path8 {
+  display: none;
+}
+.header .logo {
+  z-index: 999;
+}
+.header .logo img {
+  width: 60%;
+}
+.header .menu {
+  background-color: #0493A3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: -100vw;
+  opacity: 0;
+  transition: 0.4s ease;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 998;
+}
+.header .menu .menu-item {
+  padding: 15px 20px;
+  list-style: none;
+}
+.header .menu .menu-item a {
+  color: white;
+  font-family: "light";
+}
+.header .menu .menu-item a:hover {
+  font-family: "bold";
+}
+.header .hamburger {
+  height: 30px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .hamburger .bar {
+  height: 5px;
+  width: 100%;
+  background-color: #27226B;
+  border-radius: 5px;
+  z-index: 999;
+}
+.header .hamburger #top {
+  transform: translateY(-4px);
+  transition: all 0.6s ease;
+}
+.header .hamburger #middle {
+  transition: all 0.6s ease;
+}
+.header .hamburger #bottom {
+  transform: translateY(4px);
+  transition: all 0.6s ease;
+}
+.header .open {
+  opacity: 1;
+  left: 0;
+}
+.header .open #top {
+  transform: translateY(5px) rotate(135deg);
+  background-color: white;
+}
+.header .open #middle {
+  opacity: 0;
+  transform: rotate(360deg);
+}
+.header .open #bottom {
+  transform: translateY(-5px) rotate(-135deg);
+  background-color: white;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  .header .menu {
+    top: 0;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .header .menu {
+    top: 0;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header {
+    padding: 30px 50px;
+    align-items: center;
+    margin-top: 0;
+    position: relative;
+  }
+  .header .path1 {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+  }
+  .header .path8 {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+  .header .logo img {
+    width: 120%;
+  }
+  .header .menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    display: flex;
+    border-radius: 6px;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    flex-direction: row;
+  }
+  .header .menu .menu-item {
+    padding: 27px 10px;
+  }
+  .header .menu .menu-item a {
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+  }
+  .header .hamburger {
+    display: none;
+  }
+}/*# sourceMappingURL=navigation.css.map */
